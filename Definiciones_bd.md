@@ -16,8 +16,6 @@ Incluyen **metadatos** para trazabilidad y asegurar **idempotencia** (UPSERT sob
 - **page_size:** `INT` → tamaño de página.
 - **request_payload:** `JSONB` → parámetros de request.
 
-**Restricciones:**
-- `PRIMARY KEY (id)`
 
 ---
 
@@ -32,8 +30,6 @@ Incluyen **metadatos** para trazabilidad y asegurar **idempotencia** (UPSERT sob
 - **page_size:** `INT`
 - **request_payload:** `JSONB`
 
-**Restricciones:**
-- `PRIMARY KEY (id)`
 
 ---
 
@@ -48,6 +44,4 @@ Incluyen **metadatos** para trazabilidad y asegurar **idempotencia** (UPSERT sob
 - **page_size:** `INT`
 - **request_payload:** `JSONB`
 
-**Restricciones:**
-- `PRIMARY KEY (id)`
 
