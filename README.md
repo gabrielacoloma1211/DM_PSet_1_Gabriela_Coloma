@@ -26,16 +26,16 @@ cd <repo>
 
 2. Levantar servicios:  
 docker compose up -d
+ 
+
+3. Apagar servicios:  
+docker compose down
 
 
 Servicios:  
 - warehouse: PostgreSQL (5432)  
 - warehouseui: pgAdmin (8081)  
-- scheduler: Mage (6789)  
-
-3. Apagar servicios:  
-docker compose down
-
+- scheduler: Mage (6789) 
 
 ---
 
@@ -50,7 +50,7 @@ Se llaman desde el código con la función `get_secret_value()`.
 | `qb_refresh`       | Token para pedir nuevos accesos a QBO | Cada 101 días (por QBO)     | Yo |
 | `qb_realm`         | ID de la empresa en QBO               | Nunca cambia                | Yo |
 | `pg_host`          | Dirección del servidor Postgres       | Solo si cambia infra        | Yo |
-| `pg_port`          | Puerto de conexión a Postgres         | Nunca (fijo)                | Yo |
+| `pg_port`          | Puerto de conexión a Postgres         | Nunca                    | Yo |
 | `pg_db`            | Nombre de la base de datos            | Solo si se crea otra        | Yo |
 | `pg_user`          | Usuario para entrar a Postgres        | Solo si se compromete       | Yo |
 | `pg_password`      | Contraseña de Postgres                | Cada 90 días o si hay fuga  | Yo |
@@ -67,7 +67,7 @@ Parámetros:
 
 Segmentación:  
 - Se divide en chunks de 7 días  
-- Paginación con startposition y maxresults  
+- Paginación con startposition y maxresults 
 
 Límites y reintentos:  
 - Manejo del error 429 (Too Many Requests) con backoff exponencial  
