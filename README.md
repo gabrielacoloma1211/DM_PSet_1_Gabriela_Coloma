@@ -12,11 +12,6 @@ Los pipelines se orquestaron en Mage, se despliegan con Docker Compose y se gest
 
 ---
 
-***Arquitectura***  
-(Aquí incluir diagrama de arquitectura en PNG/JPG o ASCII si aplica)
-
----
-
 ***Pasos para levantar contenedores y configurar proyecto***  
 
 1. Clonar este repositorio:  
