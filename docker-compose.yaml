@@ -9,6 +9,7 @@ services:
       - "./warehouse_data:/var/lib/postgresql/data:rw"
     ports:
       - "5432:5432"
+
   warehouseui:
     image: dpage/pgadmin4
     environment:
@@ -18,6 +19,7 @@ services:
       - "./warehouse_ui_data:/var/lib/pgadmin"
     ports:
       - "8081:80"
+
   scheduler:
     image: mageai/mageai
     volumes:
